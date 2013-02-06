@@ -1,0 +1,34 @@
+{
+  "name": "http-share",
+  "version": "0.1.6",
+  "author": "Olli K <olli@salaliitto.com>",
+  "description": "Share a directory over http with one command",
+  "keywords": [
+    "http",
+    "https",
+    "gui",
+    "share",
+    "static",
+    "server"
+  ],
+  "preferGlobal": "true",
+  "main": "./app.js",
+  "bin": { "http-share-gui": "./http-share-gui" },
+  "contributors": [
+    {
+      "name": "Olli K",
+      "email": "olli@salaliitto.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/gildean/http-share.git"
+  },
+  "engines": {
+    "node": ">=0.6.x"
+  },
+  "dependencies": {
+    "connect": "2.7.x",
+    "appjs": ">=0.0.20"
+  }
+}

@@ -1,0 +1,107 @@
+
+
+body, html, .grid {
+    -webkit-font-smoothing: antialiased;
+  	-webkit-box-sizing: border-box;
+  	background: transparent;
+  	overflow: hidden;
+}
+
+#portinput {
+	color: #666;
+	font-size: 200%;
+	margin: 15px auto 0;
+}
+
+.floater {
+	float: right;
+}
+
+.brand .icon {
+	font-size: 200%;
+}
+
+#minbutton, #closebutton {
+	opacity: 0.8;
+	-webkit-transition: opacity 0.2s ease-in-out;
+}
+
+#minbutton:hover, #closebutton:hover {
+	cursor: pointer;
+	opacity: 1;
+}
+
+#titlebar .icon {
+	float: right;
+	margin: 4px 4px 0 0;
+	font-size: 130%;
+	color: rgba(255,255,255,0.8);
+}
+
+#titlebar {
+	width: 609px;
+	margin: 3px 0 0 3px;
+	padding: 0;
+}
+
+#titlebar h2 {
+	display: inline-block;
+	color: #fff;
+	margin: 0;
+	padding: 0 0 0 3px;
+}
+
+#authselect input {
+	color: #666;
+	font-size: 140%;
+}
+
+.span8 {
+	margin: 0;
+	padding: 0;
+}
+
+.tile {
+	-webkit-transition: all 0.2s ease-in-out;
+	margin: 3px 0 0 3px;
+}
+
+.tile * {
+	-webkit-transition: color 0.2s ease-in-out;
+	color: rgba(255,255,255,0.8);
+}
+
+
+.tile-content:hover * {
+	color: rgba(255,255,255,1);
+}
+
+.tile:hover {	
+	outline: 0;
+}
+
+.grid {
+	padding: 0 0 3px 0;
+}
+
+.tile.double {
+	width: 303px;
+}
+
+#sslselect h3 {
+	padding: 0 0 5px 0;
+	display: inline-block;
+}
+
+#sslselect span {
+	display: block;
+}
+
+#sslselect button {
+	float: right;
+	margin: 5px 0 0;
+}
+
+.separator {
+	margin: 10px auto 10px;
+}

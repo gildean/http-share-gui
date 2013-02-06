@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+  <head>
+    <title>HTTP-Share</title>
+    <link href="/css/modern.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <form>
+    <div id="main" class="grid">
+        <div class="row">
+                <div id="titlebar" class="bg-color-blueDark tile-content">
+                    <h2 id="maintitle">HTTP-Share</h2>
+                    <div id="closebutton" class="icon icon-cancel"></div>
+                    <div id="minbutton" class="icon icon-arrow-down-3"></div>
+                </div>
+        </div>
+        <div class="row">
+            <div class="span8">
+                <div class="tile double bg-color-blue" id="dirbutton">
+                    <div class="tile-content">
+                        <h2>Directory</h2>
+                        <div class="notices">
+                            <div id="dirlabel" class="notice-text">~</div>
+                        </div>
+                        <div class="brand">
+                            <div class="icon icon-folder"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tile bg-color-blue">
+                    <div class="tile-content">
+                        <h2>Port</h2>
+                        <div class="input-control text">
+                            <input type="number" min="0" max="65535" id="portinput" value="8080" required />
+                        </div>
+                        <div class="brand">
+                            <div class="icon icon-target"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tile bg-color-blueDark" id="startbutton">
+                    <div class="tile-content">
+                        <h2 id="startvalue">Start</h2>
+                        <div class="brand">
+                            <div id="running" class="icon icon-play"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="span8">
+                <div class="tile" id="nodirlistbutton">
+                    <div class="tile-content">
+                        <h2>Directory Listings</h2>
+                        <div class="notices">
+                            <div id="dirlist" class="notice-text">Enabled</div>
+                        </div>
+                        <div class="brand">
+                            <div id="dirlisticon" class="icon icon-list"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tile" id="authbutton">
+                    <div class="tile-content">
+                        <h2>Basic Auth</h2>
+                        <div class="notices">
+                            <div id="authnotice" class="notice-text">Disabled</div>
+                        </div>
+                        <div class="brand">
+                            <div id="authicon" class="icon icon-unlocked"></div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div id="authselect" class="tile double">
+                    <div class="tile-content">
+                        <h3>Username: </h3>
+                        <div class="input-control text">
+                            <input id="username" class="auth" type="text" />
+                        </div>
+                        <h3>Password:</h3>
+                        <div class="input-control password">
+                            <input id="password" class="auth" type="password" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+       <div class="row">
+                <div class="span8">
+             
+                <div class="tile" id="loggingbutton">
+                    <div class="tile-content">
+                        <h2>Logging</h2>
+                        <span id="logfilenotice">n/a</span>
+                        <div class="notices">
+                            <div id="loggingnotice" class="notice-text">Disabled</div>
+                        </div>
+                        <div class="brand">
+                            <div id="loggingicon" class="icon icon-none"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tile" id="sslbutton">
+                    <div class="tile-content">
+                        <h2>SSL</h2>
+                        <div class="notices">
+                            <div id="sslnotice" class="notice-text">Disabled</div>
+                        </div>
+                        <div class="brand">
+                            <div id="sslicon" class="icon icon-broadcast"></div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div id="sslselect" class="tile double">
+                    <div class="tile-content">
+                        <div class="separator">
+                            <h3>Key (.pem)</h3>
+                            <button class="sslbuttons" id="key">Choose key</button>
+                            <span id="keynotice">n/a</span>
+                        </div>
+                        <div class="separator">
+                            <h3>Cert (.pem)</h3>
+                            <button class="sslbuttons" id="cert">Choose cert</button>
+                            <span id="certnotice">n/a</span>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+
+            </div>
+        </div>
+    </form>
+    <script src="jquery.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
