@@ -1,6 +1,6 @@
 {
-  "name": "http-share",
-  "version": "0.1.6",
+  "name": "http-share-gui",
+  "version": "0.0.1",
   "author": "Olli K <olli@salaliitto.com>",
   "description": "Share a directory over http with one command",
   "keywords": [
@@ -22,7 +22,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/gildean/http-share.git"
+    "url": "git://github.com/gildean/http-share-gui.git"
   },
   "engines": {
     "node": ">=0.6.x"
