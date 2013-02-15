@@ -1,55 +1,12 @@
 var app = module.exports = require('appjs');
 var path = require('path');
 var fs = require('fs');
+var share = null;
+var httpServer;
 
-process.title = 'Http-Share-Gui'
+process.title = 'Http-Share'
 
 app.serveFilesFrom(__dirname + '/content');
-
-var menubar = app.createMenu([{
-  label:'&File',
-  submenu:[
-    {
-      label:'E&xit',
-      action: function(){
-        window.close();
-      }
-    }
-  ]
-},{
-  label:'&Window',
-  submenu:[
-    {
-      label:'Fullscreen',
-      action:function(item) {
-        window.frame.fullscreen();
-      }
-    },
-    {
-      label:'Minimize',
-      action:function(){
-        window.frame.minimize();
-      }
-    },
-    {
-      label:'Maximize',
-      action:function(){
-        window.frame.maximize();
-      }
-    },{
-      label:''//separator
-    },{
-      label:'Restore',
-      action:function(){
-        window.frame.restore();
-      }
-    }
-  ]
-}]);
-
-menubar.on('select',function(item){
-
-});
 
 var trayMenu = app.createMenu([{
   label:'Show',
@@ -69,7 +26,7 @@ var trayMenu = app.createMenu([{
 }]);
 
 var statusIcon = app.createStatusIcon({
-  icon:'./data/content/icons/32.png',
+  icon:'./data/content/icons/128.png',
   tooltip:'HTTP-Share',
   menu:trayMenu
 });
@@ -86,12 +43,8 @@ window.on('create', function(){
   window.frame.center();
   window.frame.opacity=0.95;
   window.frame.showChrome=0;
-  window.frame.setMenuBar(menubar);
 });
 
-
-var httpServer;
-var share = null;
 
 window.on('ready', function(){
   window.process = process;
@@ -186,6 +139,7 @@ window.on('ready', function(){
 
   closebutton.click(function () {
     window.close();
+    process.exit(0);
   });
 
   function switchEnabled(el) {

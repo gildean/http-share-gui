@@ -29,7 +29,7 @@ module.exports = function (secure, port, path, auth, nodirlists, logs) {
 
     // static middleware handles reqs (also for favicons)first, the favicon-middleware is a fallback
      app.use(connect.static(path))
-        .use(connect.favicon(__dirname + '/favicon.ico'));
+        .use(connect.favicon(__dirname + '/content/favicon.ico'));
     
     // the directorylistings are created unless explicitly disabled
     if (!nodirlists) {
