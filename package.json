@@ -13,7 +13,7 @@
   ],
   "preferGlobal": "true",
   "main": "./app.js",
-  "bin": { "http-share-gui": "./http-share-gui" },
+  "bin": { "http-share-gui": "./bin/http-share-gui" },
   "contributors": [
     {
       "name": "Olli K",

@@ -1,9 +1,9 @@
 http-share-gui
 ==============
 
-Graphical version of [http-share](https://github.com/gildean/http-share)
+Graphical desktop version of [http-share](https://github.com/gildean/http-share)
 
-Clone repo, run `npm install -g` and `http-share-gui`
+Clone repo, run `npm install` and `./bin/http-share-gui`
 
 The bin currently only supports *NIX, on Windows you need to run `node --harmony app` in the app dir.
 
